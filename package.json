@@ -8,7 +8,7 @@
     "lint": "next lint"
   },
   "prisma": {
-    "seed": "tsx --require dotenv/config scripts/safe-seed.ts"
+    "seed": "node prisma/seed.js"
   },
   "devDependencies": {
     "@next/swc-wasm-nodejs": "13.5.1",
