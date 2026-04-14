@@ -197,7 +197,7 @@ export default function Home() {
               className="relative aspect-[4/3] bg-gray-100 rounded-xl overflow-hidden shadow-lg"
             >
               <Image
-                src="/uploads/combo-parranda.jpeg"
+                src="/uploads/Collage 1.png"
                 alt="Combo completo Empíricamente - Guitarra, Caja Vallenata y Guacharaca"
                 fill
                 className="object-contain p-4"

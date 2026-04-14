@@ -38,5 +38,13 @@
     "imageUrl": "caja guacha combo.jpeg",
     "categoryName": "Combos",
     "categorySlug": "combos"
+  },
+  {
+    "name": "Correa (flamas rojas) Guitarra/Bajo",
+    "price": 22500,
+    "description": "Correa de guitarra/bajo ref#132",
+    "imageUrl": "correa llamas roja.png",
+    "categoryName": "Accesorios",
+    "categorySlug": "accesorios"
   }
 ]
