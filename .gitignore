@@ -1,0 +1,13 @@
+# Dependencias
+node_modules/
+
+# Archivos de Next.js
+.next/
+
+# Variables de entorno (Contraseñas)
+.env
+.env.local
+
+# Base de datos local
+dev.db
+dev.db-journal
