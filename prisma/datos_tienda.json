@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Guitarra Acústica",
+    "price": 197000,
+    "description": "Guitarra artesanal de alta calidad, ideal para estudiantes",
+    "imageUrl": "guitarra-acustica.jpeg",
+    "categoryName": "Cuerdas",
+    "categorySlug": "cuerdas"
+  },
+  {
+    "name": "Caja Vallenata (Acrílico)",
+    "price": 175000,
+    "description": "Caja vallenata profesional en acrílico con excelente brillo y acabados",
+    "imageUrl": "Caja sola.png",
+    "categoryName": "Percusión",
+    "categorySlug": "percusion"
+  },
+  {
+    "name": "Guacharaca",
+    "price": 55000,
+    "description": "Guacharaca de acero inoxidable con diseño ergonómico.",
+    "imageUrl": "Guacha sola.png",
+    "categoryName": "Percusión",
+    "categorySlug": "percusion"
+  },
+  {
+    "name": "Combo Vallenato Tipi",
+    "price": 405000,
+    "description": "Guitarra + Caja + Guacharaca. El kit esencial para iniciar tu camino en el vallenato",
+    "imageUrl": "vallenato tipo combo.jpeg",
+    "categoryName": "Combos",
+    "categorySlug": "combos"
+  },
+  {
+    "name": "Combo vallenato Percu",
+    "price": 205000,
+    "description": "Caja + Guacharaca. Pa' que te quemes las manos. ",
+    "imageUrl": "caja guacha combo.jpeg",
+    "categoryName": "Combos",
+    "categorySlug": "combos"
+  }
+]
