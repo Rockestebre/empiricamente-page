@@ -73,6 +73,7 @@ model Product {
   name        String
   description String   
   price       Int      // Price in COP
+  priceFrom   Boolean  @default(false)
   stock       Int      @default(0)
   imageUrl    String
   categoryId  String

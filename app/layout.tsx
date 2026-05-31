@@ -33,9 +33,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <head>
-        <script src="https://apps.abacus.ai/chatllm/appllm-lib.js"></script>
-      </head>
       <body className="bg-white text-gray-900">
         <Providers>
           {children}

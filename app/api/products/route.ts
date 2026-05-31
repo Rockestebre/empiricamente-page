@@ -16,7 +16,15 @@ export async function GET(request: NextRequest) {
       orderBy: { createdAt: 'desc' }
     });
 
-    return NextResponse.json(products);
+    const normalized = products.map(p => ({
+      ...p,
+      imageUrl:
+        p.imageUrl && !p.imageUrl.startsWith('/') && !p.imageUrl.startsWith('http')
+          ? `/${p.imageUrl}`
+          : p.imageUrl,
+    }));
+
+    return NextResponse.json(normalized);
   } catch (error) {
     console.error('Products API error:', error);
     return NextResponse.json(

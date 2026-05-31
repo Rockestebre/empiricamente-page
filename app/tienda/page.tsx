@@ -16,12 +16,13 @@ interface Product {
   imageUrl: string;
   stock: number;
   categoryId: string;
-  category?: { id: string; name: string };
+  category?: { id: string; name: string; slug?: string };
 }
 
 interface Category {
   id: string;
   name: string;
+  slug?: string;
 }
 
 function TiendaContent() {
@@ -37,14 +38,23 @@ function TiendaContent() {
         const res = await fetch('/api/products');
         const data = await res.json();
         setProducts(data || []);
-        
+
         const cats = new Map();
         data?.forEach((p: Product) => {
           if (p.category) {
             cats.set(p.category.id, p.category);
           }
         });
-        setCategories(Array.from(cats.values()));
+        const catList = Array.from(cats.values()) as Category[];
+        setCategories(catList);
+
+        // Preselect category from URL (?cat=slug), e.g. coming from landing page
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('cat');
+        if (slug) {
+          const match = catList.find(c => c.slug === slug);
+          if (match) setSelectedCategory(match.id);
+        }
       } catch (error) {
         console.error('Error fetching products:', error);
       } finally {

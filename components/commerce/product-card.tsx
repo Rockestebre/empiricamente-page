@@ -10,11 +10,12 @@ interface ProductCardProps {
   id: string;
   name: string;
   price: number;
+  priceFrom?: boolean;
   imageUrl: string;
   stock: number;
 }
 
-export function ProductCard({ id, name, price, imageUrl, stock }: ProductCardProps) {
+export function ProductCard({ id, name, price, priceFrom, imageUrl, stock }: ProductCardProps) {
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {
@@ -48,7 +49,10 @@ export function ProductCard({ id, name, price, imageUrl, stock }: ProductCardPro
       </div>
       <div className="p-4">
         <h3 className="font-semibold text-sm truncate text-gray-900">{name}</h3>
-        <p className="text-xl font-bold text-blue-600 mt-2">${price?.toLocaleString() || 0} COP</p>
+        <p className="text-xl font-bold text-blue-600 mt-2">
+          {priceFrom && <span className="text-sm font-medium text-gray-500">Desde </span>}
+          ${price?.toLocaleString() || 0} COP
+        </p>
         <p className="text-xs text-gray-600 mt-1">{stock} disponibles</p>
         <Button
           onClick={handleAddToCart}

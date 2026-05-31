@@ -1,50 +1,52 @@
 [
   {
     "name": "Guitarra Acústica",
-    "price": 197000,
-    "description": "Guitarra artesanal de alta calidad, ideal para estudiantes",
-    "imageUrl": "guitarra-acustica.jpeg",
-    "categoryName": "Cuerdas",
-    "categorySlug": "cuerdas"
+    "price": 180000,
+    "priceFrom": true,
+    "stock": 3,
+    "description": "Guitarra acústica artesanal de buena calidad. Disponible en varios colores (negro, rojo, azul, clásica) según existencias. Escríbenos por WhatsApp para confirmar los colores disponibles hoy.",
+    "imageUrl": "/guitarra-acustica.jpeg",
+    "categoryName": "Guitarras",
+    "categorySlug": "guitarras"
   },
   {
-    "name": "Caja Vallenata (Acrílico)",
-    "price": 175000,
-    "description": "Caja vallenata profesional en acrílico con excelente brillo y acabados",
-    "imageUrl": "Caja sola.png",
-    "categoryName": "Percusión",
-    "categorySlug": "percusion"
+    "name": "Caja Vallenata · Acrílico",
+    "price": 168000,
+    "priceFrom": true,
+    "stock": 2,
+    "description": "Caja vallenata profesional en acrílico, con excelente brillo y sonido potente. Colores variados (neón, rojo, azul, verde, naranja) según existencias. Confirma colores disponibles por WhatsApp.",
+    "imageUrl": "/Caja sola.png",
+    "categoryName": "Cajas Vallenatas",
+    "categorySlug": "cajas-vallenatas"
+  },
+  {
+    "name": "Caja Vallenata · Madera Artesanal",
+    "price": 140000,
+    "priceFrom": true,
+    "stock": 1,
+    "description": "Caja vallenata en madera, pieza artesanal única. Cada una tiene un diseño diferente e irrepetible. Escríbenos por WhatsApp para ver el diseño disponible.",
+    "imageUrl": "/caja-madera.jpeg",
+    "categoryName": "Cajas Vallenatas",
+    "categorySlug": "cajas-vallenatas"
   },
   {
     "name": "Guacharaca",
     "price": 55000,
-    "description": "Guacharaca de acero inoxidable con diseño ergonómico.",
-    "imageUrl": "Guacha sola.png",
+    "priceFrom": false,
+    "stock": 2,
+    "description": "Guacharaca de acero inoxidable, tamaño 30 (mediana). Diseño ergonómico, ideal para parranda.",
+    "imageUrl": "/Guacha sola.png",
     "categoryName": "Percusión",
     "categorySlug": "percusion"
   },
   {
-    "name": "Combo Vallenato Tipi",
-    "price": 405000,
-    "description": "Guitarra + Caja + Guacharaca. El kit esencial para iniciar tu camino en el vallenato",
-    "imageUrl": "vallenato tipo combo.jpeg",
-    "categoryName": "Combos",
-    "categorySlug": "combos"
-  },
-  {
-    "name": "Combo vallenato Percu",
-    "price": 205000,
-    "description": "Caja + Guacharaca. Pa' que te quemes las manos. ",
-    "imageUrl": "caja guacha combo.jpeg",
-    "categoryName": "Combos",
-    "categorySlug": "combos"
-  },
-  {
-    "name": "Correa (flamas rojas) Guitarra/Bajo",
-    "price": 22500,
-    "description": "Correa de guitarra/bajo ref#132",
-    "imageUrl": "correa llamas roja.png",
-    "categoryName": "Accesorios",
-    "categorySlug": "accesorios"
+    "name": "Batería Eléctrica Donner DED-200 Lite",
+    "price": 1850000,
+    "priceFrom": false,
+    "stock": 1,
+    "description": "Batería eléctrica Donner DED-200 Lite, kit completo ideal para práctica y presentaciones. Producto de marca, unidad única disponible.",
+    "imageUrl": "/bateria-electrica.jpeg",
+    "categoryName": "Otros",
+    "categorySlug": "otros"
   }
 ]

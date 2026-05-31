@@ -11,6 +11,8 @@ async function main() {
   const dataParaSemilla = productos.map(p => ({
     name: p.name,
     price: p.price,
+    priceFrom: p.priceFrom,
+    stock: p.stock,
     description: p.description,
     imageUrl: p.imageUrl,
     categoryName: p.category.name,
